@@ -16,8 +16,8 @@ export function reactive (): any {
         .forEach(method => {
           const originalFn: Function = constructor.prototype[method];
           constructor.prototype[method] = function (...args) {
-            store.set(instance);
             originalFn.call(instance, ...args);
+            store.set(instance);
           };
         });
 
