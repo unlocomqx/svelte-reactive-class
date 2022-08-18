@@ -20,7 +20,7 @@ export class Clock {
 
 ```
 
-```sveltehtml
+```svelte
 <!-- Use the class inside your svelte component -->
 <script lang="ts">
   import { onMount } from "svelte";
